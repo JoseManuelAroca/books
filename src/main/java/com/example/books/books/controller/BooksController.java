@@ -21,10 +21,7 @@ public class BooksController {
         interfazConPantalla.addAttribute("lista",booksList);
         return "libros";
     }
-    @GetMapping("/")
-    public String vistaHome( ModelMap interfazConPantalla){
-        return "index";
-    }
+
 
     @GetMapping("/perritos")
     public String vistaerritos( ModelMap interfazConPantalla){
