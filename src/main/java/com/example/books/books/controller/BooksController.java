@@ -30,4 +30,9 @@ public class BooksController {
     public String vistaerritos( ModelMap interfazConPantalla){
         return "perritos";
     }
+
+    @GetMapping("/login")
+    public String vistalogin( ModelMap interfazConPantalla){
+        return "login";
+    }
 }
