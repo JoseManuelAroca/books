@@ -25,6 +25,12 @@ public class EjemploController {
         return "prueba/prueba_3";
     }
 
+    @GetMapping("/prueba4")
+    public String vistaprueba4( ){
+        System.out.println("Pase por prueba 4 y me voy a prueba 3");
+        return "redirect:/prueba3";
+    }
+
     @GetMapping("/starter")
     public String vistastarter( ){
         return "starter-page";
